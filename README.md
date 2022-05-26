@@ -1,9 +1,16 @@
+https://user-images.githubusercontent.com/34187061/170554745-96279dba-d920-4b44-b4a3-46d40cd4bfe2.mp4
+
 # RFID Lock Box
  A Feather-connected lock box that uses RFID technology and real-time internet connectivity to verify access.
 
 ### Inspiration
 
 Every day at Penn we use our PennCard to provide access to locations on campus, whether that be classroom buildings or even our own dorm rooms. Using this as inspiration, our group wanted to leverage this technology to make a project that secures our belongings and out of this, the RFID Lock Box was created!
+
+![The RFID Lock Box](https://user-images.githubusercontent.com/34187061/170554861-13ebddab-50ed-4fec-a662-8f813a866d41.jpg)
+|:--:|
+| <b>The RFID Lock Box</b>|
+
 
 ### What it does
 
@@ -13,9 +20,24 @@ The RFID Lock Box uses an RFID sensor to detect authorized RFID cards, providing
 
 We built this project using a Feather HUZZAH32 board, an RC522 RFID sensor, a buzzer, and a servo motor. We also used a laser-cut acrylic box for the actual structure and used necessary auxiliary components such as a breadboard and jumper cables.
 
+![View of Wiring](https://user-images.githubusercontent.com/34187061/170554980-c586c17e-7e5c-4e17-b043-33c41dcbb0bd.jpg)
+|:--:|
+| <b>View of Wiring</b>|
+
+
 ### Challenges we ran into
 
 One challenge we ran into was converting some schematics for this project from an Arduino Uno to a Feather HUZZAH32. Because the pinout configuration is different, I had to manually map out each corresponding pin. While tedious, I did end up getting it to work. Another challenge existed on the code side and the relative limitations of the C-derived Arduino language. Given this project received new information over WIFI, it was important to append new RFID card UIDs to the total list of approved identifiers. However, because the language does not permit such appending, I could not create a mutable array thus limiting the collection to two approved UIDs at a time. In time, we hope to fix this issue with a workaround.
+
+![Original Arduino Wiring Schematics](https://user-images.githubusercontent.com/34187061/170555034-69608c00-e1ad-4974-b7d8-1e296707358a.jpg)
+|:--:|
+| <b>Original Arduino Wiring Schematics</b>|
+
+
+![New Wiring Schematics](https://user-images.githubusercontent.com/34187061/170555050-654ba31c-dcd3-479d-b1f9-13fec413a48f.jpg)
+|:--:|
+| <b>New Wiring Schematics</b>|
+
 
 ### Accomplishments that we're proud of
 
